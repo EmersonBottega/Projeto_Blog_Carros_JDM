@@ -1,0 +1,180 @@
+body {
+    width: fixed 1440px;
+    height: fixed 3780px;
+    background: #FFF;
+}
+
+/*Parte do cabeçalho*/
+header {
+    position: fixed;
+    width: 2365px;
+    height: fixed 133px;
+    flex-shrink: 0;
+    background-color: #FFF;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*JAPAN CARS*/
+#japancars {
+    color: black;
+    flex-shrink: 0;
+    padding-left: 1%;
+    box-sizing: border-box;
+    font-size: 300%;
+    text-decoration: none;
+}
+
+/*Parte do lado direito (blog, about, ...)*/
+header nav {
+    -ms-flex-align: end;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    flex-direction: row;
+}
+
+/*Parte do Japão*/
+.japao {    
+    width: 854px;
+    height: 533px;
+    flex-shrink: 0;
+    padding-top: 150px;
+}
+
+/*Texto abaixo da imagem do Japão*/
+.introduction {
+    width: 858px; 
+    height: 162px;
+    text-align: center;
+    font-family: serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; 
+}
+
+/*Texto antes do article*/
+.question {
+    width: 592px; 
+    height: 68px;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#linha1 {
+    width: 592px; 
+    border: solid 2px;
+}
+
+/*Parte da SECTION 2*/
+.article2 {
+    align-items: center;
+}
+
+/*Título da SECTION 2*/
+.titulo {
+    font-family: serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/*Imagens da SECTION 2*/
+.figura1 {
+    display: inline-flex;
+}
+
+.r34 {
+    width: 405px; 
+    height: 250px;
+    border-radius: 10%;
+}
+
+#r34_text {
+    width: 288px;
+    height: 78px;
+    margin-right: 21%;
+}
+
+.supra {
+    width: 405px; 
+    height: 250px;
+    padding-left: 5%;
+    border-radius: 10%;
+}
+
+#supra_text {
+    width: 288px;
+    height: 78px;
+    margin-top: -5%;
+    margin-left: 22%;
+}
+
+.figura2 {
+    display: inline-flex;
+}
+
+.rx7 {
+    width: 405px; 
+    height: 250px;
+    border-radius: 10%;
+}
+
+#rx7_text {
+    width: 288px;
+    height: 78px;
+    margin-right: 21%;
+}
+
+.evolution {
+    width: 405px; 
+    height: 250px;
+    padding-left: 5%;
+    border-radius: 10%;
+}
+
+#evolution_text {
+    width: 288px;
+    height: 78px;
+    margin-top: -5%;
+    margin-left: 22%;
+}
+
+/*Parte FINAL*/
+.section3 {
+    width: auto;
+    height: 400px;
+    background-image: linear-gradient(to top, black, rgb(65, 65, 65));
+    color: #FFF;
+    align-items: center;
+    text-align: center;
+}
+
+/*Texto japao*/
+.japanEnd {
+    font-family: 'Times New Roman';
+    height: 27px;
+    padding-top: 10%;
+    font-size: 240%;
+}
+
+#texto_contato {
+    width: fixed 488px;
+    height: fixed 71px;
+    text-align: center;
+}
+
+.contato {
+    padding: 1%;
+}
