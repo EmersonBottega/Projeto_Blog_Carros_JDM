@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Carros JDM</title>
     <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
     <!--HEADER-->
     <header>
-        <a id="japancars" href="index.html">JAPAN CARS</a>  
-        <nav>      
-            <a href="#blog" style= color:black>BLOG</a>
-            <a href="#projects" style= color:black>PROJECTS</a> 
-            <a href="#about" style= color:black>ABOUT</a>
-        </nav>
+        <div class="containerHeader">
+            <a id="japancars" href="index.html">JAPAN CARS</a>  
+            <nav>      
+                <a href="#blog" style= color:black>BLOG</a>
+                <a href="#projects" style= color:black>PROJECTS</a> 
+                <a href="#about" style= color:black>ABOUT</a>
+            </nav>
+        </div>
     </header>
 
     <!--INTRODUCTION section1-->
     <section id="blog" class="section1">
-        <center>
-            <article class="article1">
-                <img src="Assets/japao.jpg" alt="japao" class="japao">
+        <div class="section1Div">
+            <article>
+                <img src="Assets/japao.jpg" alt="japao" id="japaoImage">
             
-                <p class="introduction">A few words about this blog platform, the cars and a little bit of their histories!</p>
-            
-                <h4 class="question">Why are these cars so famous? Which one do you prefer?</h4>
+                <div class="introduction">
+                    <p>A few words about this blog platform, <br> the cars and a little bit of their histories!</p>
+                </div>
+                <div class="question">
+                    <p> <h4 id="jdm">What is JDM?</h4>Japonese Domestic Market. It was on the basis of these three principles that JDM was born. An acronym used to name cars from the Japanese market</p>
+                </div>
                 <hr id="linha1">
             </article>
-        </center>
+        </div>
     </section>
 
     <!--ARTICLES (PHOTOS) section2-->

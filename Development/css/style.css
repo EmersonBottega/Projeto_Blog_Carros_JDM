@@ -1,73 +1,74 @@
 body {
-    width: fixed 1440px;
-    height: fixed 3780px;
     background: #FFF;
+    
+}
+
+* {
+    font-family: serif;
 }
 
 /*Parte do cabeçalho*/
-header {
+.containerHeader {
     position: fixed;
-    width: 2365px;
-    height: fixed 133px;
-    flex-shrink: 0;
-    background-color: #FFF;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to left, #ffffff, #000000, #ffffff);
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
     font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
 }
 
 /*JAPAN CARS*/
 #japancars {
     color: black;
-    flex-shrink: 0;
     padding-left: 1%;
     box-sizing: border-box;
     font-size: 300%;
     text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*Parte do lado direito (blog, about, ...)*/
-header nav {
-    -ms-flex-align: end;
+nav {
+    right: 5;
+    position: absolute;
+    text-align: end;
     color: #FFF;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 170%;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    flex-direction: row;
+    letter-spacing: 5px;
+    margin-top: 0.2%;
 }
 
 /*Parte do Japão*/
-.japao {    
-    width: 854px;
-    height: 533px;
-    flex-shrink: 0;
-    padding-top: 150px;
+.section1Div {
+    align-items: center;
+    text-align: center;
+    padding-top: 7%;
+}
+
+#japaoImage {  
+    width: 60%;
+    height: 70%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 /*Texto abaixo da imagem do Japão*/
 .introduction {
-    width: 858px; 
-    height: 162px;
-    text-align: center;
-    font-family: serif;
     font-size: 54px;
-    font-style: normal;
     font-weight: 700;
     line-height: 100%; 
+    padding: 2%;
 }
 
 /*Texto antes do article*/
+#jdm {
+    font-weight: bold;
+}
+
 .question {
-    width: 592px; 
-    height: 68px;
-    font-family: serif;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0em;
-    text-align: center;
 }
 
 #linha1 {
@@ -82,7 +83,6 @@ header nav {
 
 /*Título da SECTION 2*/
 .titulo {
-    font-family: serif;
     font-size: 44px;
     font-weight: 700;
     line-height: 53px;
