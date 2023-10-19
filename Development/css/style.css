@@ -29,7 +29,6 @@ body {
 nav {
     right: 5;
     position: absolute;
-    text-align: end;
     color: #FFF;
     font-size: 20px;
     font-style: normal;
@@ -80,62 +79,46 @@ nav {
 
 .carImages {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
 }
 
-.figureInLine {
-    display: inline-flex;
+#carsText {
+    color: black;
 }
 
 .r34 {
     width: 405px; 
     height: 250px;
+    margin: 20px;
     border-radius: 8%;
-    padding: 2%;
-}
-
-.textCarImages {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#r34_text {
-    margin-right: 21%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .supra {
     width: 405px; 
     height: 250px;
     border-radius: 8%;
-    padding: 2%;
-}
-
-#supra_text {
-    margin-top: -6%;
-    margin-left: 22%;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .rx7 {
     width: 405px; 
     height: 250px;
     border-radius: 8%;
-    padding: 2%;
-}
-
-#rx7_text {
-    margin-right: 21%;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .evolution {
     width: 405px; 
     height: 250px;
-    padding-left: 5%;
     border-radius: 8%;
-    padding: 2%;
-}
-
-#evolution_text {
-    margin-top: -6%;
-    margin-left: 22%;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .contatos {
