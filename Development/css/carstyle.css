@@ -5,11 +5,6 @@
     font-style: normal;
 }
 
-@keyframes animation {
-    from{color: white;};
-    to{color: black;};
-}
-
 body {
     background: #FFF;
 }
@@ -46,14 +41,12 @@ nav {
     font-size: 20px;
     font-style: normal;
     letter-spacing: 5px;
-    margin-top: 0.2%;
-    z-index: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Godofwar';
 }
 
 #navText {
     font-family: 'Godofwar';
+    margin-right: 20px;
 }
 
 .introSection {
@@ -280,6 +273,7 @@ nav {
     height: 250px;
     border-radius: 10%;
     margin-top: 20px;
+    margin-bottom: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -289,11 +283,11 @@ nav {
 }
 
 .car-image {
-    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .car-image:hover {
-    opacity: 0.8;
+    transform: scale(1.1);
 }
 
 .button {
@@ -325,6 +319,11 @@ nav {
     text-align: center;
 }
 
+.formEmail {
+    text-align: center;
+    justify-content: center;
+}
+
 .email {
     height: 40px;
     border: 1px solid #000000;
@@ -348,10 +347,6 @@ nav {
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 4px rgb(255, 255, 255);
     font-family: 'Godofwar';
-    animation-name: animation;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
 }
 
 .contatos {
