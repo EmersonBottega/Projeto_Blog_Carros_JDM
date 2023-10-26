@@ -5,6 +5,9 @@ function addComment() {
     if (commentText.trim() === "") {
         alert("Please enter a comment.");
         return;
+    } else if (commentText.length > 44){
+        alert("You have reached the limit of caracters (44).")
+        return;
     }
 
     const commentList = document.getElementById("comment-list");
