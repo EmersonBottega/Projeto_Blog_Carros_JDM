@@ -3,10 +3,10 @@ function addComment() {
     const commentText = commentInput.value;
 
     if (commentText.trim() === "") {
-        alert("Please enter a comment.");
+        showAlert("The field is empty. Write something!");
         return;
-    } else if (commentText.length > 44){
-        alert("You have reached the limit of caracters (44).")
+    } else if (commentText.length > 40) {
+        showAlert("You have reached the limit of characters (40). Try again!");
         return;
     }
 
@@ -28,9 +28,38 @@ function validarEmail() {
     const email = emailInput.value;
 
     if (email.includes("@")) {
-        alert("Email registered successfully!");
+        showSuccessModal("Email registered successfully!");
         emailInput.value = "";
-    } else {
-        alert("Invalid Email. Please enter a valid email address");
+    }else {
+        showErrorModal("Invalid Email. Please enter a valid email address!");
     }
 }
+
+function showAlert(message) {
+    document.getElementById("alertMessage").innerText = message;
+    openModal('alertModal');
+}
+
+function showSuccessModal(message) {
+    document.getElementById("successMessage").innerText = message;
+    openModal('successModal');
+}
+
+function showErrorModal(message) {
+    document.getElementById("errorMessage").innerText = message;
+    openModal('errorModal');
+}
+
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target.className === "modal") {
+      event.target.style.display = "none";
+    }
+};

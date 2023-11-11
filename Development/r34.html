@@ -129,6 +129,39 @@
             <i data-feather="phone" color="#000000"></i> (45) 99999-9999
         </div>
     </div>
+
+    <div class="modal" id="alertModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('alertModal')">&times;</span>
+            <h2>Alert!</h2>
+            <p id="alertMessage"></p>
+            <div class="buttonModal">
+                <button id="buttonModal" onclick="closeModal('alertModal')">OK!</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('successModal')">&times;</span>
+            <h2>Success!</h2>
+            <p id="successMessage"></p>
+            <div class="buttonModal">
+                <button id="buttonModal" onclick="closeModal('successModal')">OK!</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="errorModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('errorModal')">&times;</span>
+            <h2>Error!</h2>
+            <p id="errorMessage"></p>
+            <div class="buttonModal">
+                <button id="buttonModal" onclick="closeModal('errorModal')">OK!</button>
+            </div>
+        </div>
+    </div>
     
     <script>
         feather.replace()
