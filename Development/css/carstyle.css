@@ -147,6 +147,10 @@ header nav a {
     font-size: 20px;
 }
 
+#decoration {
+    text-decoration: none;
+}
+
 .vertical-line {
     justify-content: center;
     height: 100%;

@@ -48,11 +48,11 @@
             <p id="ultimo_texto">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis posuere ligula. <br> <br> Thanks for reading, <br> Mika</p>
             
             <div class="share">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=" id="facebook">
+                <a id="decoration" href="https://www.facebook.com/sharer/sharer.php?u=" id="facebook">
                     <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/18w50.jpg" alt=""> Share on Facebook
                 </a>
                 <hr class="vertical-line">
-                <a href=https://api.whatsapp.com/send?text=Bot%C3%A3o%20para%20compartilhamento%20de%20conte%C3%BAdo%20no%20WhatsApp%20https%3A%2F%2Fwww.blogcyberini.com%2F2018%2F05%2Fbotao-para-compartilhamento-de-conteudo-whatsapp.html id="whatsapp">
+                <a id="decoration" href=https://api.whatsapp.com/send?text=Bot%C3%A3o%20para%20compartilhamento%20de%20conte%C3%BAdo%20no%20WhatsApp%20https%3A%2F%2Fwww.blogcyberini.com%2F2018%2F05%2Fbotao-para-compartilhamento-de-conteudo-whatsapp.html id="whatsapp">
                     <img width="25" height="25" src="https://ayltoninacio.com.br/img/s/20w50.jpg" alt=""> Share on WhatsApp
                 </a>
             </div>
@@ -130,6 +130,39 @@
         </div>
     </div>
     
+    <div class="modal" id="alertModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('alertModal')">&times;</span>
+            <h2>Alert!</h2>
+            <p id="alertMessage"></p>
+            <div class="buttonModal">
+                <button id="buttonModal" onclick="closeModal('alertModal')">OK!</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('successModal')">&times;</span>
+            <h2>Success!</h2>
+            <p id="successMessage"></p>
+            <div class="buttonModal">
+                <button id="buttonModal" onclick="closeModal('successModal')">OK!</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="errorModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('errorModal')">&times;</span>
+            <h2>Error!</h2>
+            <p id="errorMessage"></p>
+            <div class="buttonModal">
+                <button id="buttonModal" onclick="closeModal('errorModal')">OK!</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         feather.replace()
     </script>
